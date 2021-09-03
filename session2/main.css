@@ -1,0 +1,50 @@
+/* .content{
+    width: 100%;
+    height: 200px;
+    background: goldenrod;
+}
+
+.item{
+    width: 100px;
+    height: 100px;
+    background: hotpink;
+    display: inline-block;
+} */
+/* body{
+    margin: 0;
+} */
+
+/* .box{
+    width: 300px;
+    height: 300px;
+    background: gray;
+}
+ */
+
+.content{
+    width: 85%;
+    height: 200px;
+    /* background: goldenrod;   */
+    margin: auto;
+}
+
+.item{
+    width: 24%;
+    height: 100%;
+    background: #f9f9fd;
+    display: inline-block;
+    text-align: center;
+}
+.item-img{
+    width: 100%;
+    height: 40%;
+    /* background: darkblue; */
+}
+
+
+
+.item-text{
+    width: 100%;
+    height: 60%;
+    /* background: gray;  */
+}
