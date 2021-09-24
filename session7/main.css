@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+.speaker{
+    width: 270px;
+    height: 420px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    background-image: url("img/member-3.jpg.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+
+.speaker img{
+    width: 100%;
+    height: 100%;
+}
+.social{
+    width: 200px;
+    height: 45px;
+    background: rebeccapurple;
+    position: absolute;
+    top: -100px;
+    left: 10%;
+    transition: all 1s;  
+}
+
+
+.info{
+    width: 200px;
+    height: 200px;
+    background: hotpink;
+    position: absolute;
+    bottom: 20px;
+    left: -300px;
+    transition: all 1s;  
+}
+
+.speaker:hover .social{
+    top: 0px; 
+}
+
+.speaker:hover .info {
+    left: 20px;
+}
+
+/* product */
+
+.product{
+    width: 220px;
+    height: 350px;
+    background: gray;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-img{
+    width: 100%;
+    height: 70%;
+    position: relative;
+
+}
+.product-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.product-info{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    /* position: relative; */
+}
+
+.product-info button {
+    border: none;
+    padding: 15px 32px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    /*margin-top: 20%;
+    */position: absolute;
+    bottom: -100px;
+    left: 20%;
+    transition: 1s all;
+    -webkit-transition: 1s all;
+    -moz-transition: 1s all;
+    -ms-transition: 1s all;
+    -o-transition: 1s all;
+}
+.product-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    transition: 1s all;
+}
+
+.product:hover .product-overlay{
+    background: rgba(0,0,0,0.2);
+
+}
+
+.product:hover .product-info button{
+    bottom: 20px;
+}
+
+.product-icon{
+    width: 80%;
+    height: 50px;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    opacity: 0;
+}
+
+.icon1{
+    width: 50px;
+    height: 50px;
+    background: blue;
+    position: absolute;
+    top:0px;
+    border-radius: 50%;
+
+}
+
+.icon2{
+    width: 50px;
+    height: 50px;
+    background: blue;
+    position: absolute;
+    top:0px;
+    left: 40%;
+    border-radius: 50%;
+}
+
+.icon3{
+    width: 50px;
+    height: 50px;
+    background: blue;
+    position: absolute;
+    top:0px;
+    left: 80%;
+    border-radius: 50%;
+}
+
+
+.product:hover .product-icon{
+    opacity: 1;
+}
+
+
+/* session color */
+
+/* .box{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 102, 0,0.1); */
+    /* opacity: 0.1; */
+/* } */
+
+/* end color */
+
+/* .cover{
+    width: 100%;
+    height: 650px;
+    position: relative;
+}
+.cover img{
+    width:100%;
+    height:100%;
+}
+.overlay{
+    position: absolute;
+    top:0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.4;
+} */
+
+
+p{
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* transform */
+/* @keyframes farah{ */
+    /* 0% { background-color:red ; transform:rotate(20deg) ; -webkit-transform:rotate(20deg) ; -moz-transform:rotate(20deg) ; -ms-transform:rotate(20deg) ; -o-transform:rotate(20deg) ; }
+    20% { background-color:blue ; transform:rotate(-20deg); -webkit-transform:rotate(-20deg); -moz-transform:rotate(-20deg); -ms-transform:rotate(-20deg); -o-transform:rotate(-20deg); }
+    50% { background-color:blue ; transform:scale(2,2); -webkit-transform:scale(2,2); -moz-transform:scale(2,2); -ms-transform:scale(2,2); -o-transform:scale(2,2); }
+    80% {background-color:brown}
+    100% {background-color:gold} */
+/* 
+    from {background: blue;}
+    to { background: red;} */
+/* } */
+
+/* .box{
+    width: 200px;
+    height: 200px;
+    background-color: goldenrod;
+    margin: 300px auto;
+    animation-name: farah;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}  */
+
+
+
+
+
+/* .box:hover{
+    transform: skew(20deg,20deg);
+    -webkit-transform: skew(20deg,20deg);
+    -moz-transform: skew(20deg,20deg);
+    -ms-transform: skew(20deg,20deg);
+    -o-transform: skew(20deg,20deg);
+} */
+
+
+/* transform task */
+
+/* .room{
+    width: 262px;
+    height: 270px;
+    background: goldenrod;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: relative;
+} */
+
+/* .room img{
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.room:hover img{
+    transform: scale(1.2,1.2);
+    -webkit-transform: scale(1.2,1.2);
+    -moz-transform: scale(1.2,1.2);
+    -ms-transform: scale(1.2,1.2);
+    -o-transform: scale(1.2,1.2);
+} */
+
+/* .room button {
+    border: none;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+} */
+html{
+    scroll-behavior: smooth;
+}
+
+.pointer{
+    width: 20px;
+    height: 40px;
+    border: 1px solid black;
+    /* background-color: blue; */
+    margin: auto;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    position: relative;
+}
+
+.kora{
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    top: 2px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    animation-name: harakalkora;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes harakalkora{
+    from {top:2px}
+    to {top: 30px; opacity: 0;}
+}
+
+
+*{
+    box-sizing:border-box;
+}
+
+/* :root{
+    --primary:goldenrod;
+    --fontsize:20px;
+    --fontfamily:arial;
+} */
+
+.container{
+    width: 100%;
+    height: 500px;
+    background: gray;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-around;
+}
+
+/* .container div{
+    width: 100%;
+    height: 50%;
+    background: goldenrod;
+    margin-bottom: 10px;
+} */
+
+
+
+
+
+
+/* @media (min-width:481px) and (max-width:768px) {
+  
+    .container div{
+        width: 100%;
+        height: 50%;
+        background: goldenrod;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+   
+    .container div{
+        width: 30%;
+        height: 50%;
+        background: goldenrod;
+        margin-bottom: 10px;
+    }
+} */
+
+
+
+@media print {
+    p {
+        font-size: 100px;
+    }
+}
+
+
+
+
+
+
+.red , .green , .blue {
+    width: 100px;
+    height: 100px;
+}
+
+.red {
+    background-color: red;
+}
+
+
+.green {
+    background-color: green;
+}
+
+
+.blue {
+   background-color: blue; 
+}
+
+
+#box{
+    width: 200px;
+    height: 500px;
+    background: gray;
+    position: relative;
+    left: -180px;
+}
+
+.x{
+    position: absolute;
+    right: 0;
+    top: 20%;
+    color: white;
+}
+
+
+
+
+.nav{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+}
+
+.navafter{
+    width: 100%;
+    height: 100px;
+    background-color: goldenrod;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+}
+
+
+
+.gototop{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: black;
+    position: fixed;
+    right: 5px;
+    bottom: 10px;
+    text-align: center;
+    opacity: 1;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+.gototop a {
+    color:white;
+    text-decoration: none;
+}
+#box{
+    margin-top: 200px;
+    width: 400px;
+    height: 400px;
+    background-color: goldenrod;
+}
+
+
+.op1{
+    opacity: 1;
+}
+
+.op0{
+    opacity: 0;
+}
