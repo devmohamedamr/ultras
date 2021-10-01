@@ -60,10 +60,10 @@ function read() {
   var size = list_of_tasks.length;
   var list = '';
   for(var i =0;i<size;i++){
-    list += "<li onclick='cancel("+ i +")'>"+ list_of_tasks[i] + "</li>";
+    list += "<li  onclick='cancel("+ i +")'>"+ list_of_tasks[i] + "</li> <button onclick='update("+ i +")'>update</button>";
   }
   document.getElementById("tasks").innerHTML = list;
-    // console.log(list);
+   
 }
 
 var canceled = [];
@@ -75,7 +75,7 @@ function cancel(index){
     var list = '';
     for(var i =0;i<size;i++){
       if(canceled.includes(i)){
-        list += "<li style='text-decoration:line-through' onclick='cancel("+ i +")'>"+ list_of_tasks[i] + "</li>";
+        list += "<li ondblclick='remove("+ i +")' style='text-decoration:line-through' onclick='cancel("+ i +")'>"+ list_of_tasks[i] + "</li>";
       }else{
         list += "<li  onclick='cancel("+ i +")'>"+ list_of_tasks[i] + "</li>";
       }
@@ -83,37 +83,28 @@ function cancel(index){
     document.getElementById("tasks").innerHTML = list;
 }
 
-function remove() {
-  
+function remove(index) {
+  //  alert(index);
+  list_of_tasks.splice(index,1);
+
 }
 
-function update() {
-  
+function update(index) {
+  var inpt = document.getElementById("btn");
+    document.getElementById("task").value = list_of_tasks[index];
+    inpt.style = 'display:none';
+    document.getElementById("btnupdate").style = "display:inline";
+    document.getElementById("index").value = index;
+  }
+
+function edit(){
+  // list_of_tasks[index] = 
+  var taskid =  document.getElementById("index").value;
+  list_of_tasks[taskid] = document.getElementById("task").value;
+  console.log(list_of_tasks);
+  document.getElementById("btn").style = "display:inline";
+  document.getElementById("btnupdate").style = "display:none";
+  document.getElementById("task").value = '';
+
+  read();
 }
-
-
-var numbers = [1,4,2,10,70,3,6];
-
-
-function end(arr){
-   size = numbers.length;
-   console.log(arr[size-1]);
-}
-
-end(numbers);
-// var max=  Math.max.apply(Math,numbers);
-// function max(arr){
-//     var size = numbers.length;
-//     first = numbers[0];
-
-//     for(var i=0;i<size;i++){
-//         if(first > numbers[i]){
-//           first = numbers[i];
-//         }
-//     }
-//     console.log(first);
-// }
-
-// max(numbers);
-// console.log(max);
-
