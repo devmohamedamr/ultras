@@ -44,13 +44,17 @@
 // }
 
 
-
+// var marked = 0;
 var list_of_tasks = [];
 
 function add() {
     var task = document.getElementById("task").value;
-
-    list_of_tasks.push(task);
+    var newtask =  task.trim();
+    if(newtask != ''){
+      list_of_tasks.push(task);
+    }else{
+      alert("string is empty");
+    }
     document.getElementById("task").value = '';
     read();
 }
@@ -67,9 +71,19 @@ function read() {
 }
 
 var canceled = [];
+
 function cancel(index){
-    canceled.push(index);
+    // marked++;
     console.log(canceled);
+
+    if(canceled.includes(index)){
+      // canceled.pop(index);
+      canceled.splice(index,1);
+    }else{
+      canceled.push(index);
+    }
+
+    // console.log(canceled);
     // list_of_tasks
     var size = list_of_tasks.length;
     var list = '';
@@ -108,3 +122,4 @@ function edit(){
 
   read();
 }
+
